@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 4b6f5dd9d17ca4b4893c4a7723e52769
+timeCreated: 1440864394
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Ankle_L
+    100002: Ankle_R
+    100004: BackA_M
+    100006: BackB_M
+    100008: Chest_M
+    100010: Cup_L
+    100012: Cup_R
+    100014: Elbow_L
+    100016: Elbow_R
+    100018: Hair_M
+    100020: Head_M
+    100022: Hip_L
+    100024: Hip_R
+    100026: IndexFinger1_L
+    100028: IndexFinger1_R
+    100030: IndexFinger2_L
+    100032: IndexFinger2_R
+    100034: IndexFinger3_L
+    100036: IndexFinger3_R
+    100038: IndexFinger4_L
+    100040: IndexFinger4_R
+    100042: Knee_L
+    100044: Knee_R
+    100046: MiddleFinger1_L
+    100048: MiddleFinger1_R
+    100050: MiddleFinger2_L
+    100052: MiddleFinger2_R
+    100054: MiddleFinger3_L
+    100056: MiddleFinger3_R
+    100058: MiddleFinger4_L
+    100060: MiddleFinger4_R
+    100062: MiddleToe1_L
+    100064: MiddleToe1_R
+    100066: MiddleToe2_L
+    100068: MiddleToe2_R
+    100070: Neck_M
+    100072: //RootNode
+    100074: orc_body_warrior
+    100076: orc_head
+    100078: PinkyFinger1_L
+    100080: PinkyFinger1_R
+    100082: PinkyFinger2_L
+    100084: PinkyFinger2_R
+    100086: PinkyFinger3_L
+    100088: PinkyFinger3_R
+    100090: PinkyFinger4_L
+    100092: PinkyFinger4_R
+    100094: RingFinger1_L
+    100096: RingFinger1_R
+    100098: RingFinger2_L
+    100100: RingFinger2_R
+    100102: RingFinger3_L
+    100104: RingFinger3_R
+    100106: RingFinger4_L
+    100108: RingFinger4_R
+    100110: Root_M
+    100112: Scapula_L
+    100114: Scapula_R
+    100116: Shoulder_L
+    100118: Shoulder_R
+    100120: ThumbFinger1_L
+    100122: ThumbFinger1_R
+    100124: ThumbFinger2_L
+    100126: ThumbFinger2_R
+    100128: ThumbFinger3_L
+    100130: ThumbFinger3_R
+    100132: ThumbFinger4_L
+    100134: ThumbFinger4_R
+    100136: Wrist_L
+    100138: Wrist_R
+    400000: Ankle_L
+    400002: Ankle_R
+    400004: BackA_M
+    400006: BackB_M
+    400008: Chest_M
+    400010: Cup_L
+    400012: Cup_R
+    400014: Elbow_L
+    400016: Elbow_R
+    400018: Hair_M
+    400020: Head_M
+    400022: Hip_L
+    400024: Hip_R
+    400026: IndexFinger1_L
+    400028: IndexFinger1_R
+    400030: IndexFinger2_L
+    400032: IndexFinger2_R
+    400034: IndexFinger3_L
+    400036: IndexFinger3_R
+    400038: IndexFinger4_L
+    400040: IndexFinger4_R
+    400042: Knee_L
+    400044: Knee_R
+    400046: MiddleFinger1_L
+    400048: MiddleFinger1_R
+    400050: MiddleFinger2_L
+    400052: MiddleFinger2_R
+    400054: MiddleFinger3_L
+    400056: MiddleFinger3_R
+    400058: MiddleFinger4_L
+    400060: MiddleFinger4_R
+    400062: MiddleToe1_L
+    400064: MiddleToe1_R
+    400066: MiddleToe2_L
+    400068: MiddleToe2_R
+    400070: Neck_M
+    400072: //RootNode
+    400074: orc_body_warrior
+    400076: orc_head
+    400078: PinkyFinger1_L
+    400080: PinkyFinger1_R
+    400082: PinkyFinger2_L
+    400084: PinkyFinger2_R
+    400086: PinkyFinger3_L
+    400088: PinkyFinger3_R
+    400090: PinkyFinger4_L
+    400092: PinkyFinger4_R
+    400094: RingFinger1_L
+    400096: RingFinger1_R
+    400098: RingFinger2_L
+    400100: RingFinger2_R
+    400102: RingFinger3_L
+    400104: RingFinger3_R
+    400106: RingFinger4_L
+    400108: RingFinger4_R
+    400110: Root_M
+    400112: Scapula_L
+    400114: Scapula_R
+    400116: Shoulder_L
+    400118: Shoulder_R
+    400120: ThumbFinger1_L
+    400122: ThumbFinger1_R
+    400124: ThumbFinger2_L
+    400126: ThumbFinger2_R
+    400128: ThumbFinger3_L
+    400130: ThumbFinger3_R
+    400132: ThumbFinger4_L
+    400134: ThumbFinger4_R
+    400136: Wrist_L
+    400138: Wrist_R
+    4300000: orc_body_warrior
+    4300002: orc_head
+    9500000: //RootNode
+    13700000: orc_body_warrior
+    13700002: orc_head
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

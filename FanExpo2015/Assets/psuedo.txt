@@ -1,0 +1,122 @@
+//BOSS AI PSEUDO CODe
+// 5 PHASES IN TOTAL WITH A HARD ENRAGE TIMER
+// Will need different AI sets scaled depending on the # of players.
+float masterTimer; // MASTER TIMER AT THE 10 MIN MARK, BOSS GOES INTO HARD ENRAGE MODE AND WIPES PARTY
+int bossHealth;
+int currentPhase=0;
+int prevPhase = 0;
+int actionSequence = 0;
+int maxActionSequance = 2; //THE MAX NUMBER OF ACTIONS IN A PHASE BEFORE WE REPEAT
+
+void BossAction(int action); //THE FUNCTION THAT CALLS DIFFERENT BOSS ATTACKS
+
+int void main()
+{
+	// MASTER CONDITIONALS. CHANGE PHASE DEPENDING ON HEALTH WITH A MASTER ENRAGE TIMER
+	// THIS ALLOWS PLAYERS TO PHASE PUSH AND NOT HAVE THE BOSS FINISH THE WHOLE PHASE 
+
+	if (masterTimer < 600seconds){ // Once the 10 minute/600second mark is hit, it's time to enrage.
+		currentPhase = 5;
+	}
+	else {
+		//Determine phase by boss HP left
+		if (bossHealth > 70 % )
+		{
+			currentPhase = 0;
+		}
+		else if (bossHealth < 70 % && bossHealth >= 50 % ) {
+			currentPhase = 1;
+		}
+		else if (bossHealth < 50 % && bossHealth >= 30 % ) {
+			currentPhase = 2;
+		}
+		else { //basically under 30%
+			currentPhase = 3;
+		}
+	}
+
+	// ENSURE WE ARE ON THE RIGHT PHASE & RESET ACTION SEQUENCE ACCORDINGLY
+	if (prevPhase != currentPhase){
+		phaseChange();
+	}
+
+
+
+	switch (currentPhase)
+	{
+	case 0: // Phase 1 // between 100-70%
+		// actionSequence 0: BossAction(0) - Cleave x3 
+		// actionSequence 1: BossAction(1) - Center In and Out AoE
+		// actionSequence 2: BossAction(2) - Jump to target character causing small aoe splash damage
+		// repeat (reset the actionSequence)
+		if (actionSequence == maxActionSequence)
+		{
+			actionSequence = 0;
+		}
+		else {
+			actionSequence++;
+		}
+	case 1:
+		// Phase 2 // between 69 to 50%
+		//actionSequence 0: BossAction(3) - Radial Charge
+		//actionSequence 1: BossAction(1) - Center In and Out Aoe
+		// actionSequence 2: BossAction(0) - Cleave x3 
+		//Repeat (reset the actionSequence)
+	case 2:
+		// Phase 3 - 49-30% Health
+		//actionSequence 0: BossAction(0) - Cleave x3
+		//actionSequence 1: BossAction(4) - Target In and Out AoE
+		//actionSequence 2: BossAction(3) - Radial Charge
+		//Repeat (reset the actionSequence)
+	case 3:
+		// Phase 4 - Final Phase below 30% health
+		// actionSequence 0: BossAction(0) - Cleave x3
+		// actionSequence 1: BossAction(5) TARGET DIVE
+		// actionSequence 2: BossAction(4) Target In and Out AoE
+		// repeat (reset the actionSequence)
+	default:
+		// Phase 5 ENRAGE. Set as default in case player breaks the game.
+		// PERFORM 10 SECOND EMERGENCY COUNTDOWN (give the players a last chance)
+			// BOSS ACTION(6)
+			// GAME OVER - FORCE RESET
+	}
+}
+
+void phaseChange(){
+	prevPhase = currentPhase;
+	actionSequence = 0;
+	//DO ALL THE OTHER NECESSARY PHASE CHANGE STUFF
+}
+
+void bossAction(int action){
+
+
+	// BossAction(0) - Cleave (basic boss attack - large cone attack) x3 times spaced out 
+
+	// BossAction(1) - In and Out Aoe
+		// Jump to center causing small aoe splash damage around him
+		// outer circle attack
+		// inner Circle Attack (this combination forces the players to run out and then back in)
+
+	// BossAction(2) - Jump to target character causing small aoe splash damage
+
+	//BossAction(3) - Radial Charge
+		//Boss appears at a random clock position
+		//two clones spawn either left or right of the boss at the 45 degree and 90 degree positions
+		//Boss charges in the a straight line, followed by 1st mirror at the 45 degree and then the clone at the 90 degree
+		//Boss returns to center.
+
+	// BossAction(4) Boss lands on player with highest aggro causing small aoe splash damage around him
+		// outer circle attack
+		// inner Circle Attack (this combination forces the players to run out and then back in)
+
+	// BossAction(5) TARGET DIVE : Boss and a clone appear at random clock positions
+		//Boss performs a target lock on random player. Make note of location1
+		//Clone performs a target lock on random player. Make note of location2
+		//Boss charges through the first target location
+		//Clone charges trhough the second target location
+
+	// BossAction(6) - EPIC EXPLOSION - INSTANT WIPE
+
+	//NOTE BossAction1 and BossAction5 are the exact same except BA1 lands dead center of the map whereas BA5 lands on a player. 
+}
